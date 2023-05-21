@@ -1,0 +1,143 @@
+.navbar{
+    top: 0;
+    z-index: 1;
+    position: sticky;
+}
+.navbar__divs{
+    height: 9rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}.logo:hover{color: var(--color_white);}
+.navbar a{
+    color: var(--color_white);
+    text-transform: uppercase;
+    transition: 300ms;
+    font-weight: 500;
+}
+
+.navbar__links a:hover{
+    color: var(--color_btn);
+}
+.navbar__links >ul > li{
+    float: left;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+i.test{
+    display: inline-block;
+    transform: rotate(90deg);
+    font-style:normal;
+}
+.drop-down{
+    visibility: hidden;
+    position: absolute;
+    top: -1rem;
+    opacity: 0;
+    background-color: var(--color_white);
+    box-shadow: 0 2px 28px rgba(0,0,0,0.2);
+    width: 20rem;
+    transition: 300ms;
+}
+.navbar__links li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 3rem;
+}
+
+.drop-down li{
+    line-height: 4rem;
+    margin-bottom: 0.8px;
+    border-bottom: 1px solid #F5F5F5;
+    transition: 300ms;
+}
+.drop-down a{
+    padding-left: 2rem;
+    font-size: 1.6rem;
+    color: #3b566e;
+}
+.drop-down li:hover{
+    border-left: 3px solid var(--color_btn);
+}
+
+header{
+    position: relative;
+    height: 105vh;
+    background-image:url(../images/header_background.png) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 -20vh;
+    color: var(--color_white);
+}
+header > .container{padding-top: 10vh;}
+
+.container{
+    max-width: 114rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container__div--padding{padding: 0 1.5rem;}
+
+h1{
+    font-size: 6.4rem;
+    line-height: 8rem;
+    letter-spacing: 1.4px;
+    font-weight: 400;
+}
+h2{
+    font-size: 4.8rem;
+    font-weight: 300;
+    color: #232323;
+}
+h5{
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 2.5rem;
+}
+h6{
+    font-size: 2.1rem;
+}
+p{
+    color: #4A4A4A;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+a{
+    display: inline-block;
+    text-decoration: none !important;
+    color: #007BFF;
+}
+a:hover{
+    color: #5256B3;
+}
+
+ul{
+    list-style: none;
+}
+
+footer{margin: 6rem 0;}
+.footer__social{display: flex; gap: 1.5rem;}
+.footer__social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+}
+footer p{margin-top: 1rem;}

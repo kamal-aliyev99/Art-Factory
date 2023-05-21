@@ -1,0 +1,53 @@
+:root{
+    --color_white: #ffffff;
+    --color_backG: #00A1D6;
+    --color_main: #00b4c6;
+    --color_btn: #f55858;
+    --color_hover: #0088E8;
+    --linear_gr:linear-gradient(270deg , #0088E7, #00B6C6);
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: #FF589E;
+    color: var(--color_white);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--color_white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #1E1E1E;
+}
+
+.btn{
+    font-size: 1.3rem;
+    padding: 1.2rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+    color: var(--color_white);
+}
+.btn:hover{
+    background-color: var(--color_hover);
+    color: var(--color_white);
+}
+
+.btn-dark{background-color: var(--color_btn);}
+.btn-light{background-color: var(--color_main);}
+.linear-bcg{background: var(--linear_gr);}
+.flex-reverse{order: -1;}
